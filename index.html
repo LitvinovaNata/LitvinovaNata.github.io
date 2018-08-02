@@ -7,34 +7,29 @@
 	div{
 		width:850px;
 		margin: 0 auto;
-		display: block;
 		}	
-	#div1{
+	#centre_div{
 		width:100%;
 		height: 80px;
 		background-color: #696969;
 		text-align: center;
 		line-height: 80px;
-		}
-	p1, p2, p3{
+		margin-top: -22px;
 		color: #FFFFFF;
 		}
-	p1, p5{ 
-		font-size:24px; 
-		}
-	p2{ 
-		font-size:32px;
-		letter-spacing: 5px;
-		}	
-	p4, p5{
-		color: #0000CD;
-	}
-	p4{
-		font-size:28px;
-	}
-	#div2{
+	#header{
 		width: 100%;
 		display: flex;
+		}
+	#left_div {
+		width: 30%; background: linear-gradient(85deg, #708090 35%, #BEBEBE 65%, #D3D3D3 80%);
+		color: #FFFFFF;
+		}
+	#name {
+		margin-left: 10px;
+		margin-bottom: -15px;
+		letter-spacing: 2px;
+		line-height: 20px;
 		}
 	img {
 		width: 160px;
@@ -43,41 +38,45 @@
 		border-radius: 55px;
 		margin: 20px 46px;
 		}
-	#div3{
+	#line{
 		height: 3px; 
 		width: 75%; 
 		border-bottom: solid 3px yellow;
-		margin-left: 15px;
+		margin-left: 10px;
 		display: flex;
 		}
-	#button1 {
+	#info{
+		margin-left: 45px;
+		}
+	#relax {
 		width: 70%;
 		margin-left: 5px;
 		text-align: center;
 		background-color: #FFD700; 
 		border-radius: 5px;"
-	}
-	#button2 {
+		}
+	#read {
 		width: 50%;
 		margin-left: 5px;
 		text-align: center;
 		background-color: #000080; 
 		border-radius: 5px;
-		margin-top: 5px;
-	}
-	#button3 {
+		margin-top: -15px;
+		}
+	#dance {
 		width: 90%;
 		margin-left: 5px;
 		text-align: center;
 		background-color: #006400; 
 		border-radius: 5px;
-		margin-top: 5px;
-	}
-	#div4{
+		margin-top: -15px;
+		}
+	#right_div{
 		background-color: #F8F8FF;
 		width: 70%;
-	}
-	#line{
+		color: #0000CD;
+		}
+	#line_big{
 		height: 3px; 
 		width: 95%; 
 		border-bottom: solid 3px #1E90FF;
@@ -85,78 +84,80 @@
 		margin-top: 6px;
 		display: flex;
 		}
-	li{
+	#text_info{
+		margin-left: 10px; 
+		margin-top: 10px;
+		line-height: 15px;
+	}
+	#social_networks{
 		color: #FFFFFF;
 		margin-top: 10px;
-	}
+		}
 
 	#ul {
   		list-style-type: none;
   		margin-left: -20px; 
   		margin-top: 0px;
-    }
+    	}
    	#ul > li:before {
   		content: "–"; 
   		color: #0000CD;
   		position: absolute;
   		margin-left: -15px;
-  		margin-top: 2px; 
-	}
+  		}
 	</style>
 </head>
 <body>
 	<div style="outline: 10px solid #F8F8FF; border: 5px solid #D3D3D3;">
-		<div id="div1"><p1>&#10046 HELLO &#10046</p1></div>
-		<div id="div2">
-			<div style="width: 30%; background: linear-gradient(85deg, #708090 35%, #BEBEBE 65%, #D3D3D3 80%)">
+		<div id="centre_div"><h1>&#10046 HELLO &#10046</h1></div>
+		<div id="header">
+			<div id="left_div">
 				<img src="img1.jpg" alt="FOTO">
-				<table style="margin: 0px 15px">
-					<tr><td><p2>Наталья</p2></td></tr>
-					<tr><td><p2>Литвинова</p2></td></tr>
-				</table>
-					<div id="div3"></div>
-					<div style="margin: 30px 75px"><p1><u>Люблю:</u></p1></div>
-					<div id="button1"><p3> Отдыхать</p3></div>
-					<div id="button2"><p3> Читать</p3></div>
-					<div id="button3"><p3> Танцевать</p3></div>
-					<div style="margin: 30px 68px 10px"><p1><u>Контакты</u></p1>	</div>
-				<div style="margin-top: 5px; margin-left: 25px">
-						<ul>
-							<li><b><a href="https://m.vk.com">Vk</a></b></li>
-							<li><b><a href="https://m.ok.ru">OK</a></b></li>
-							<li><b><a href="https://www.facebook.com">Facebook</a></b></li>
-						</ul>
+				<div id="name">
+					<h1>Наталья</h1>
+					<h1>Литвинова</h1>
+				</div>
+					<div id="line"></div>
+					<div id="info"><h1><u>Люблю:</u></h1></div>
+					<div id="relax"><h4> Отдыхать</h4></div>
+					<div id="read"><h4> Читать</h4></div>
+					<div id="dance"><h4> Танцевать</h4></div>
+					<div id="info"><h1><u>Контакты</u></h1></div>
+				<div>
+					<ul id="social_networks">
+						<li><b><a href="https://m.vk.com">Vk</a></b></li>
+						<li><b><a href="https://m.ok.ru">OK</a></b></li>
+						<li><b><a href="https://www.facebook.com">Facebook</a></b></li>
+					</ul>
 				</div>
 
 			</div>
-			<div id="div4">
-				<div style="margin-left: 10px; margin-top: 10px">
-					<div><p4><b>Дата рождения:</b></p4></div>
-					<div><p5>5 марта 1983 года</p5></div>
-					<div><p4><b>Место рождения:</b></p4></div>
-					<div><p5>Украина, город Днепропетровск</p5></div>
+			<div id="right_div">
+				<div id="text_info">
+					<div><h2><b>Дата рождения:</b></h2></div>
+					<div><h3>5 марта 1983 года</h3></div>
+					<div><h1><b>Место рождения:</b></h1></div>
+					<div><h3>Украина, город Днепропетровск</h3></div>
 				</div>
-				<div id="line"></div>
-				<div style="margin-left: 10px; margin-top: 10px">
-					<div><p4><b>Soft skills:</b></p4></div>
+				<div id="line_big"></div>
+				<div id="text_info">
+					<div><h2><b>Soft skills:</b></h2></div>
 					<ul id="ul">
-						<li><p5>Photoshop</p5><li>
-						<li><p5>Word</p5></li>
-						<li><p5>Paint</p5></li>
+						<li><h3>Photoshop</h3><li>
+						<li><h3>Word</h3></li>
+						<li><h3>Paint</h3></li>
 					</ul>
 				</div>
-				<div id="line"></div>
-				<div style="margin-left: 10px; margin-top: 10px">
-					<div><p4><b>Обо мне:</b></p4></div>
+				<div id="line_big"></div>
+				<div id="text_info">
+					<div><h2><b>Обо мне:</b></h2></div>
 					<ul id="ul">
-						<li><p5>Люблю вкусно покушать</p5><li>
-						<li><p5>Люблю гулять по ночному Киеву</p5></li>
-						<li><p5>Люблю поспать</p5></li>
+						<li><h3>Люблю вкусно покушать</h3><li>
+						<li><h3>Люблю гулять по ночному Киеву</h3></li>
+						<li><h3>Люблю поспать</h3></li>
 					</ul>
 				</div>
-				<div id="line"></div>
-			
-				
+				<div id="line_big"></div>
 			</div>
 		</div>
 
